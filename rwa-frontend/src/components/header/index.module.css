@@ -1,0 +1,52 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #1c1c1e;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.nav-start {
+  display: flex;
+  align-items: center;
+}
+
+.nav-start-logo {
+  margin-right: 15px;
+}
+
+.nav-start-slogan {
+  font-size: 18px;
+  color: white;
+  font-weight: bold;
+}
+
+.nav-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.navLink {
+  font-size: 16px;
+  color: white;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+
+.navLink:hover {
+  color: #ff7f50;
+  /* Highlight color on hover */
+}
+
+.nav-end {
+  display: flex;
+  align-items: center;
+}
