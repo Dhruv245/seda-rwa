@@ -14,7 +14,7 @@ export default function Header() {
             {/* Image without the <a> tag */}
             <img src="rwa.png" alt="Marketplace Logo" width={60} height={60} className={styles['nav-start-logo']} />
           </Link>
-          <div className={styles['nav-start-slogan']}>RWA Marketplace</div>
+          <div className={styles['nav-start-slogan']}>AssetLink</div>
         </div>
 
         <div className={styles['nav-center']}>
