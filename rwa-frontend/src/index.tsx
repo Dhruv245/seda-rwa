@@ -28,12 +28,10 @@ export default function Index() {
     const [selectedNFT, setSelectedNFT] = useState<Listing | null>(null);
 
     const fetchListedNFTs = async () => {
-      if (!isConnected) {
-        setLoading(false);
-        return;
-      }
+      setLoading(true);
 
-      const provider = new ethers.BrowserProvider(window.ethereum);
+      const provider = window.ethereum ? new ethers.BrowserProvider(window.ethereum) : ethers.getDefaultProvider();
+
       const contract = new ethers.Contract(contractAddress, MyTokenAbi, provider);
 
       try {
